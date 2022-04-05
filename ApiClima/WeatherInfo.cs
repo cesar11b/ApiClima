@@ -9,7 +9,7 @@ namespace ApiClima
     class WeatherInfo
     {
 
-        public class Cord
+        public class Coord
         {
 
             double lon { get; set; }
@@ -56,7 +56,11 @@ namespace ApiClima
         public class Root
         {
 
-
+            public Coord coord { get; set; }
+            public List<Weather> weather { get; set; }
+            public Main main { get; set; }
+            public Wind wind { get; set; }
+            public Sys sys { get; set; }
 
         }
 
